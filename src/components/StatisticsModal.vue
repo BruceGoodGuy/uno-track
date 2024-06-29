@@ -42,24 +42,26 @@ const emit = defineEmits<{
                 <p>Duration: {{ Math.floor(settings.timeEnd - settings.timeStart) / 1000 }}s</p>
                 <p>Total games: {{ settings.games.length }}</p>
             </div>
-            <table class="table-auto">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Winner</th>
-                        <th>Score</th>
-                        <th>Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="(game, index) of settings.games">
-                        <td>{{ index + 1 }}</td>
-                        <td class="uppercase">{{ game.winner.name }}</td>
-                        <td>{{ game.winner.score }}</td>
-                        <td>{{ formatDate(game.end) }}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="max-h-[200px] overflow-auto">
+                <table class="table-auto">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Winner</th>
+                            <th>Score</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(game, index) of settings.games">
+                            <td>{{ index + 1 }}</td>
+                            <td class="uppercase">{{ game.winner.name }}</td>
+                            <td>{{ game.winner.score }}</td>
+                            <td>{{ formatDate(game.end) }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <button @click="emit('confirm')" class="bg-yellow-500 text-black p-3">
             Confirm
