@@ -32,7 +32,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-    <VueFinalModal class="end-round-modal w-full" content-class="end-round-modal-content" overlay-transition="vfm-fade"
+    <VueFinalModal class="statistics-modal w-full" content-class="statistics-modal-content" overlay-transition="vfm-fade"
         content-transition="vfm-fade">
         <h1>{{ 'Statistics' }}</h1>
         <div class="flex gap-3 flex-wrap">
@@ -70,13 +70,13 @@ const emit = defineEmits<{
 </template>
 
 <style>
-.end-round-modal {
+.statistics-modal {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.end-round-modal-content {
+.statistics-modal-content {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -84,22 +84,22 @@ const emit = defineEmits<{
     border-radius: 0.5rem;
 }
 
-.end-round-modal-content>*+* {
+.statistics-modal-content>*+* {
     margin: 0.5rem 0;
 }
 
-.end-round-modal-content h1 {
+.statistics-modal-content h1 {
     font-size: 1.375rem;
 }
 
-.end-round-modal-content button {
+.statistics-modal-content button {
     margin: 0.25rem 0 0 auto;
     /* padding: 0 8px; */
     border: 1px solid;
     border-radius: 0.5rem;
 }
 
-.end-round-modal-content {
+.statistics-modal-content {
     background: rgb(43, 58, 81);
 }
 
@@ -108,7 +108,7 @@ button.player-choice {
 }
 
 @media only screen and (max-width: 600px) {
-    .end-round-modal-content {
+    .statistics-modal-content {
         width: 98%;
     }
 }

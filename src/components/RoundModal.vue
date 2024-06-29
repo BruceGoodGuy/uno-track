@@ -56,7 +56,7 @@ function setWinner(index) {
 <template>
     <VueFinalModal class="end-round-modal w-full" content-class="end-round-modal-content" overlay-transition="vfm-fade"
         content-transition="vfm-fade">
-        <h1>{{ 'Who\'s win round ' + (settings.games.length + 1) + '?' }}</h1>
+        <h1>{{ 'Who won game ' + (settings.games.length + 1) + '?' }}</h1>
         <div class="flex gap-3 flex-wrap">
             <div v-for="(player, index) of settings.players" class="uppercase">
                 <button @click="setWinner(index)"
