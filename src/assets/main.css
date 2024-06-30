@@ -24,12 +24,14 @@
   font-family: "Rowdies", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: white;
 }
 
 .rowdies-bold {
   font-family: "Rowdies", sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: white;
 }
 
 body {
@@ -53,4 +55,8 @@ input[type=number] {
   margin: auto;
   min-width: 300px;
   min-height: 500px;
+}
+
+.card .card-body {
+  color: white;
 }

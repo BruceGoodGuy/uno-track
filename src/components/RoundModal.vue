@@ -54,7 +54,7 @@ function setWinner(index) {
 </script>
 
 <template>
-    <VueFinalModal class="end-round-modal w-full" content-class="end-round-modal-content" overlay-transition="vfm-fade"
+    <VueFinalModal class="end-round-modal w-full text-white" content-class="end-round-modal-content" overlay-transition="vfm-fade"
         content-transition="vfm-fade">
         <h1>{{ 'Who won game ' + (settings.games.length + 1) + '?' }}</h1>
         <div class="flex gap-3 flex-wrap">

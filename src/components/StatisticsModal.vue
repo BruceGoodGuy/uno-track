@@ -32,7 +32,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-    <VueFinalModal class="statistics-modal w-full" content-class="statistics-modal-content" overlay-transition="vfm-fade"
+    <VueFinalModal class="statistics-modal w-full text-white" content-class="statistics-modal-content" overlay-transition="vfm-fade"
         content-transition="vfm-fade">
         <h1>{{ 'Statistics' }}</h1>
         <div class="flex gap-3 flex-wrap">

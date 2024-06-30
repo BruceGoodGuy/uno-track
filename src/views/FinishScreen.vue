@@ -87,10 +87,10 @@ function doAction(action) {
         <div class="wrap mt-10">
             <h3 class="rowdies-bold text-5xl">Finish</h3>
         </div>
-        <p>The Result is... </p>
+        <p class="rowdies-regular text-xl">The Result is... </p>
         <div
             class="wrap max-h-[400px] mt-3 overflow-auto p-2 border border-gray bg-slate-800 bg-opacity-85 rounded montserrat-text">
-            <table class="table-auto">
+            <table class="table-auto text-white">
                 <thead>
                     <tr>
                         <th>#</th>
